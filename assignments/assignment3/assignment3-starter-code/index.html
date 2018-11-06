@@ -13,15 +13,15 @@
 </head>
 <body>
 	<div class="container"
-		ng-controller='NarrowItDownController as searchController'>
+		ng-controller='NarrowItDownController as controller'>
 		<h1>Narrow Down Your Menu</h1>
 		<div class="form">
 			<div class="form-group">
-				<input type="text" ng-model="searchController.searchTerm"
+				<input type="text" ng-model="controller.searchTerm"
 					placeholder="search term" class="form-control">
 			</div>
 			<div class="form-group narrow-button">
-				<button ng-click="searchController.getMatchedMenuItems();"
+				<button ng-click="controller.getMatchedMenuItems();"
 					class="btn btn-success">Narrow It Down For Me!</button>
 			</div>
 		</div>
@@ -30,11 +30,11 @@
 		<items-loader-indicator></items-loader-indicator>
 
 		<!-- found-items should be implemented as a component -->
-		<div ng-if="searchController.found.length == 0" class="emptyMessage">Nothing
+		<div ng-if="controller.found.length == 0" class="emptyMessage">Nothing
 			found.</div>
-		<div ng-if="searchController.found.length != 0" class="tableView">
+		<div ng-if="controller.found.length != 0" class="tableView">
 
-			<found-items items="searchController.found" on-remove="searchController.removeItem(index)"></found-items>
+			<found-items items="controller.found" on-remove="controller.removeItem(index)"></found-items>
 		</div>
 	</div>
 
