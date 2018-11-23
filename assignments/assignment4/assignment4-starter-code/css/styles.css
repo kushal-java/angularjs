@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
-  color: #fff;
-  background-color: #61122f;
+  color: #000;
+  background-color: #e0e6db;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -74,7 +74,7 @@ body {
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  border: 1px solid #e0e6db;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
@@ -148,7 +148,7 @@ body {
   font-size: 1.6em;
   text-transform: uppercase;
   background-color: #000;
-  color: #fff;
+  color: #000;
   opacity: .8;
 }
 /* END HOME PAGE */
@@ -171,7 +171,7 @@ body {
   font-size: 1.2em;
   text-transform: uppercase;
   background-color: #000;
-  color: #fff;
+  color: #000;
   opacity: .8;
 }
 .category-tile:hover {
@@ -299,7 +299,7 @@ h3.menu-item-title {
     display: block;
     margin: 0 20px;
     padding: 10px;
-    border: 2px solid #fff;
+    border: 2px solid #000;
     background-color: #f6b319;
     color: #951c49;
   }
